@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function solveMath(a,b){
+    if(a===0){
+        if(b===0){
+            return("Phương trình có vô số nghiệm");
+        }else{
+            return("Phương trình vô nghiệm");
+        }
+    }else{
+        return ('Phương trình có nghiệm'+(-b/a));
+    }
+}
+let a=prompt("Nhập hệ số a ");
+a =parseFloat(a);
+let b=prompt("Nhập hệ số b ");
+b=parseFloat(b);
+let result=solveMath(a,b);
+alert(result);
+</script>
+</body>
+</html>

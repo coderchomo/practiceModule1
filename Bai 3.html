@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function countVowel(array){
+        let vowel=["u","e","o","a","i"];
+        let count=0;
+        for(let i=0;i<vowel.length;i++){
+            for(let j=0;j<array.length;j++){
+                if(vowel[j]===array[i]){
+                    count++;
+                }
+            }
+        }
+        if(count===0){
+            return false;
+        }else{
+            return count;
+        }
+    }
+    let string=prompt("Nhập chuỗi cần kiểm tra ");
+    if(countVowel(string)===false){
+        alert("Không có ký tự nguyên âm ");
+    }else{
+        alert("Trong chuỗi có "+countVowel(string)+ " ký tự nguyên âm");
+    }
+</script>
+</body>
+</html>
